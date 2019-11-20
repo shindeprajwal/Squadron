@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Application</title>
+</head>
+<style>
+  
+        * {
+         box-sizing: border-box;
+           text-align: center;
+           
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          body{
+           background: linear-gradient(to bottom, #4CA1AF, #2C3E50) fixed;
+          }
+        
+         ul {
+           
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #333;
+         }
+   
+         li {
+           float: left;
+           margin-left:15px ;
+           margin-right: 15px;
+         }
+   
+         li a {
+           display: block;
+           color: white;
+           padding: 14px 16px;
+           text-decoration: none;
+           
+         }
+   
+         li a:hover {
+          
+           background-color: #111;
+         }
+         
+   
+         /* Create three equal columns that floats next to each other */
+         .column1 {
+           background-color: #ffffff;
+          border: 1px solid black;
+           opacity: 0.7;
+           float: left;
+           width: 25%;
+           font-weight: bold;
+           padding-top:25px;
+           padding-right: 10px;
+           padding-left: 10px;
+           padding-bottom: 10px;
+           height: 400px; 
+         }
+        
+         .column2 {
+           background-color: #ffffff;
+          border: 1px solid black;
+           opacity: 0.7;
+           float: left;
+           width: 35%;
+           padding: 20px;
+           height: 400px; 
+         }
+         .column3 {
+           background-color: #ffffff;
+          border: 1px solid black;
+           opacity: 0.7;
+           
+           float: left;
+           width: 30%;
+           padding: 30px;
+           height: 400px; 
+         }
+   
+         /* Clear floats after the columns */
+         .row:after {
+           content: "";
+           display: table;
+           clear: both;
+         }
+         div{
+          overflow-x:auto;
+          border-style: groove;
+          margin-left: 250px;
+          margin-right: 250px;
+          border-radius: 6px;
+         }
+         
+         tr{
+           text-align:center;
+         }
+         
+         a{
+           text-decoration :none;
+         }
+         #login{
+           padding-left: 15px;
+           padding-right: 15px;
+         }
+         #submit,#reset{
+        background-color: #333;
+        border: 3px solid #333;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        
+      }
+      #submit:hover,#reset:hover{
+        background-color: rgb(36, 35, 35);
+        border: 3px solid rgb(36, 35, 35);
+      }
+         footer{
+           font-size: 15px;
+         }
+         
+         
+   
+   
+      </style>
+<body>
+    <H1> National Scholarship Portal </H1>
+    <h4>Government of India</h4>
+    <ul>
+      <table cellspacing="15" align="center">
+        <tr>
+          <td> <li ><a class="active" href="HOME.HTML">HOME</a></li></td>
+          <td><li><a href="ABOUT_US.HTML">ABOUT US</a></li></td>
+          <td><li><a href="CONTACT.HTML">CONTACT</a></li></td>
+      
+        </tr>
+      </table>
+      </ul>
+        <h1> Scholarship Application Form </h1>
+        <div>
+        <form action="">
+        <table cellspacing="10" align="center">
+                <tr>
+                  <td>
+                      <b>Basic Details</b>
+                      <hr>
+                  </td>
+                </tr>
+                <tr>
+                <td> Application ID</td>
+                        <td>
+                            <input type="number" id="application_id"> 
+                        </td>
+                   
+                            <td> Student ID </td>
+                            <td>
+                                <input type="number" id="STUDENT_ID"> 
+                            </td>
+                        </tr>
+                    <tr>
+                                    <td> Aadhar Number </td>
+                                    <td>
+                                        <input type="text" id="aadhar_no"> 
+                                    </td>
+                              
+                                    
+                                            <td> Student Name </td>
+                                            <td>
+                                                <input type="text" id="STUDENT_NAME"> 
+                                            </td>
+                                        </tr>
+                                    
+                                    <tr>
+                                <td> Father's Name </td>
+                               <td>
+                                    <input type="text" id="father_name" >
+                               </td>
+                            
+                                    <td> Mother's Name </td>
+                                    <td>
+                                        <input type="text" id="MOTHER_NAME"> 
+                                    </td>
+                                </tr>
+                            <tr>
+                            <tr>
+                                    <tr>
+                                            <td> Parents Occupation </td>
+                                            <td>
+                                                <input type="text" id="PARENTS_OCCUPATION"> 
+                                            </td>
+                                           <td> Annual Family Income </td>
+                                            <td>
+                                           <input type="number" id="ANNUAL_INCOME"> 
+                                           </td>
+                                           </tr>
+                                            <tr>
+                                            <td> Religion </td>
+                                            <td>
+                                            <input type="text" id="RELIGION"> 
+                                            </td>
+                                            </tr>
+                                           <tr>
+                                             <td>
+                                               <b>Academic Details</b><hr>
+                                             </td>
+                                             </tr>
+                                             <tr>
+                                            <td> Institute Name </td>
+                                           <td>
+                                            <input type="text" id="INSTITUTE_NAME"> 
+                                            </td>
+                                             <td> Present Course </td>
+                                         <td>
+                                            <input type="text" id="PRESENT_COURSE"> 
+                                         </td>
+                                         </tr>
+                                        <tr>
+                                        <tr>
+                                         <tr><tr>
+                                          <td> Present Year </td>
+                                         <td>
+                                         <input type="text" id="PRESENT_YEAR"> 
+                                        </td>
+                                      
+                                          <td> Mode of Study </td>
+                                                        <td>
+                                                           <input type="text" id="MODE_OF_STUDY"> 
+                                                        </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                      <td> Class Start Date </td>
+                                                     <td>   
+                                                            <input type="date" id="CLASS_START_DATE"> 
+                                                   </td>
+                                                         <td> University Name </td>
+                                                         <td>   
+                                                         <input type="text" id="UNIVERSITY_NAME"> 
+                                                         </td>
+                                                       </tr>
+                                                      <tr>
+                                                        </tr>
+                                                        <tr>
+                                                                <tr>
+                                                        <tr><tr>
+                                                         <td> Previous Course </td>
+                                                         <td>   
+                                                         <input type="text" id="PREVIOUS_COURSE"> 
+                                                         </td><td> Previous Passing Year </td>
+                                                         <td>   
+                                                         <input type="text" id="PREVIOUS_PASSING_YEAR"> 
+                                                         </td>
+                                                       </tr>
+                                                      <tr> 
+                                                        </tr>
+                                                        <tr>
+                                                                <tr>
+                                                        <tr><tr>
+                                                         <td> Previous Class Percent </td>
+                                                         <td>   
+                                                         <input type="number" id="PREVIOUS_CLASS_PERCENT"> 
+                                                         </td>
+                                                         <td> Seat Number </td>
+                                                             <td>   
+                                                             <input type="number" id="SEAT_NUMBER"> 
+                                                             </td>
+                                                           </tr>
+                                                                 <td> University Board Name </td>
+                                                                 <td>   
+                                                                 <input type="text" id="BOARD_NAME"> 
+                                                                 </td>
+                                                               
+                                                                     <td> Passing Year </td>
+                                                                     <td>   
+                                                                     <input type="number" id="PASSING_YEAR"> 
+                                                                    </td>
+                                                                     </tr>
+                                                                    <tr> 
+                                                                   
+                                                                   <td> Percentage Obtained </td>
+                                                                    <td>   
+                                                                    <input type="number" id="PERCENT_OBTAINED"> 
+                                                                   </td>                                                                          
+                                                                
+                                                                        
+                                                                       <td> Total Academic Fees </td>
+                                                                        <td>   
+                                                                        <input type="number" id="TOTAL_FEES"> 
+                                                                       </td>                                                                          
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td><b>Other Details</b><hr></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Martial Status</td>
+                                                                         <td>  
+                                                                           <ol style="list-style-type:none;">
+                                                                            <li><input type="radio" name="marital_status" value="married"> Married</li><br>
+                                                                            <li> <input type="radio" name="marital_status" value="not_married"> Single</li><br> 
+
+                                                                           </ol> 
+                                                                           
+                                                                        </td>                                                                          
+                                                                     
+                                                                                <td> Disability Type  </td>
+                                                                                 <td>   
+                                                                                        <select name=list>
+                                                                                                <option value="">----Select an Option----</option>
+                                                                                                <option value="Disabled">Disabled</option>
+                                                                                                <option value="Not Disabled">Not Disabled</option>
+                                                                                                </select>
+                                                                                </td>                                                                          
+                                                                             </tr>
+                                                                             <tr>
+                                                                                        <td> Address Line 1: </td>
+                                                                                           <td>   
+                                                                                          <input type="text" id="ADDRESS_LINE1" size="30"> 
+                                                                                        </td>                                                                          
+                                                                                         </tr>
+                                                                                 <tr>
+                                                                                 <td> Address Line 2: </td>
+                                                                                 <td>   
+                                                                                  <input type="text" id="ADDRESS_LINE2" size="30"> 
+                                                                                   </td>                                                                          
+                                                                                  </tr>
+                                                                                 <tr> 
+                                                                                        <tr>
+                                                                                                <td> City </td>
+                                                                                                <td>   
+                                                                                                 <input type="text" id="CITY"> 
+                                                                                                  </td>                                                                          
+                                                                                                
+                                                                                     <td> District </td>
+                                                                                     <td>   
+                                                                                     <input type="text" id="DISTRICT"> 
+                                                                                    </td>                                                                          
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                            <td> State </td>
+                                                                                            <td>   
+                                                                                            <input type="text" id="STATE"> 
+                                                                                           </td> 
+                                                                                           <td> Pincode </td>
+                                                                                                <td>   
+                                                                                                <input type="number" id="PINCODE"> 
+                                                                                               </td>                                                                          
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                    <td> Contact Number </td>
+                                                                                                    <td>   
+                                                                                                    <input type="number" id="CONTACT_NUMBER"> 
+                                                                                                   </td>                                                                          
+                                                                                                  
+                                                                                                        <td> Scholarship Scheme: </td>
+                                                                                                        <td>   
+                                                                                                      <select name=slist>
+                                                                                                    <option value="">----Select Scholarship Scheme----</option>
+                                                                                                    <option value="PMS">Post Matric Scholarship</option>
+                                                                                                    <option value="NMS">National Merit Scholarship</option>
+                                                                                                    <option value="CSS">Central Scholarship Scheme</option>
+                                                                                                    </select>
+                                                                                                       </td>                                                                          
+                                                                                                       </tr>
+                                                                                                       <td colspan="2">
+                                                                                                          <input type="Submit" id="submit" value="Submit" > 
+                                                                                                      </td>
+                                                                                                       <td colspan="2"> 
+                                                                                                              <input type="Submit" id="reset"value="Reset"> 
+                                                                                                          </td>
+                                                                                                      </tr>
+                                                                                                  
+                                                  </table>
+                                                </form>
+                                              </div>
+                                              <br>
+                                                  <footer>
+                                                      Copyright 2019 National Scholarship Portal
+                                                     </footer>
+                                                                                 
+
+</body>
+</html>

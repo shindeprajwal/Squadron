@@ -8,10 +8,7 @@
 </head>
 <body>
         <style>
-          ::-webkit-scrollbar {
-    display: none;
-}
-          * {
+                  * {
         box-sizing: border-box;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -47,19 +44,15 @@
        
         background-color: #111;
       }
-     
-                  
-    .vertical-menu {
-                  width: 350px;
-                  margin-left:50px;
-                  margin-right: 50px; 
+                .vertical-menu {
+                  width: 200px;
                   
                 }
                 
                 .vertical-menu a {
                   
                  border: 3px solid #333;
-                  color: white;
+                color: white;
                   display: block;
                   padding: 12px;
                   text-decoration: none;
@@ -69,100 +62,44 @@
                     background-color: rgb(36, 35, 35);
                     border: 3px solid rgb(36, 35, 35);
                 }
-    
-   
-      .column1 {
-       
-        float: left;
-        width: 25%;
-        font-weight: bold;
-        padding-top:25px;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-        height: 400px; 
-      }
-     
-      .column2 {
-       margin-left:50px ;
-        float: left;
-        width: 35%;
-        padding: 20px;
-        height: 400px; 
-      }
-      #button{
-                background-color: #333;
-                border: 3px solid #333;
-                color: white;
-                padding: 8px 12px;
-                padding-left: 50px;
-                padding-right:50px; 
+                
+                div{
+                    margin-top: 50px;
+                    margin-left: 20px;
+                    height: 500px;
+                }
+                .column1 {
+                border: 1px solid black;
                 border-radius: 4px;
-              
-              }
-                #button:hover{
-                background-color: rgb(36, 35, 35);
-                border: 3px solid rgb(36, 35, 35);
-              }
-             
-     
-      
-      #logo{
-        padding:15px;
-        margin-left:300px;
-        margin-right:350px;
-      }
-      @media print {
-    footer {page-break-after: always;}
-        }
-                        
+                float:left;
+                width: 25%;
+                font-weight: bold;
+                height: 400px; 
+                }
+                
                 </style>
                 </head>
                 <body>
-                    <div id=logo>
-                        <img src="govt_logo.jpg" width="100" height="100" align="left">
-                       
-                      
-                        <H1> National Scholarship Portal </H1>
-                        <h4>Government of India</h4>
-                      </div>
+                    <H1> National Scholarship Portal </H1>
+                    <h4>Government of India</h4>
                     <ul>
-                        <table cellspacing="10" align="center" >
-                          <tr>
-                            <td> <li ><a class="active" href="HOME.HTML">HOME</a></li></td>
-                            <td><li><a href="#news">ABOUT US</a></li></td>
-                            <td><li><a href="CONTACT.HTML">CONTACT</a></li></td>
-                            <td><li><a href="#about">NEW REGISTRATION </a></li></td>
-                          </tr>
-                        </table>
-                        </ul>
-                      <br><br>
-                  <div class="row">
-                    <div class="column1" >
-                      
-                        <div class="vertical-menu" >
-                          <a href="View">View list of Institutes Registered</a>
-                          <a href="View">View Student Application Form</a>
-                          <a href="View">Verify Institute Request</a></div>
-                    </div>
-                    <div class="column2" >
-                      <iframe height="1000px" width="900px" src="" name="iframe_latest_news"></iframe>
-                      <table align="center" cellspacing="10" >
-                          <tr>
-                          <td >
-                            <input type="submit" id="button" onclick="" value="Grant" name="button">
-                          <td >
-                            <input type="submit" id="button" onclick="" value="Reject"name="button" >
-                          </tr>
-                          </table>
-                    </div>
-
-
-                        
-
-                     
-                  
-                        
+                    <table cellspacing="10" align="center" >
+                        <tr>
+                        <td> <li ><a class="active" href="HOME.HTML">HOME</a></li></td>
+                        <td><li><a href="ABOUT_US.HTML">ABOUT US</a></li></td>
+                        <td><li><a href="CONTACT.HTML">CONTACT</a></li></td>
+                        <td><li><a href="">NEW REGISTRATION </a></li></td>
+                        </tr>
+                    </table>
+                    </ul>
+                    <br><br>
+                    <div class="vertical-menu" >
+                  <a href="View">View list of Institutes Registered</a>
+                  <a href="View">View Student Application Form</a>
+                  <a href="View">Verify Institute Request</a></div>
+                  <div class="column1" >
+                      <iframe height="50px" width="100%" src="" name="iframe_latest_news"></iframe>
+                  </div>
                  
 </body>
 </html>

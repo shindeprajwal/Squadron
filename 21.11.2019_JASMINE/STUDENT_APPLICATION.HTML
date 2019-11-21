@@ -7,9 +7,7 @@
     <title>Student Application</title>
 </head>
 <style>
-        ::-webkit-scrollbar {
-    display: none;
-}
+  
         * {
          box-sizing: border-box;
            text-align: center;
@@ -92,15 +90,12 @@
          }
          div{
           overflow-x:auto;
-         
-         }
-         form{
           border-style: groove;
           margin-left: 250px;
           margin-right: 250px;
           border-radius: 6px;
-          color: white;
          }
+         
          tr{
            text-align:center;
          }
@@ -111,9 +106,6 @@
          #login{
            padding-left: 15px;
            padding-right: 15px;
-         }
-         input{
-          border-radius: 4px;
          }
          #submit,#reset{
         background-color: #333;
@@ -127,11 +119,6 @@
         background-color: rgb(36, 35, 35);
         border: 3px solid rgb(36, 35, 35);
       }
-      #logo{
-        padding:15px;
-        margin-left:300px;
-        margin-right:350px;
-      }
          footer{
            font-size: 15px;
          }
@@ -141,14 +128,8 @@
    
       </style>
 <body>
-    <div id=logo>
-        <img src="govt_logo.jpg" width="100" height="100" align="left">
-       
-      
-        <H1> National Scholarship Portal </H1>
-        <h4>Government of India</h4>
-      </div>
-      
+    <H1> National Scholarship Portal </H1>
+    <h4>Government of India</h4>
     <ul>
       <table cellspacing="15" align="center">
         <tr>
@@ -164,7 +145,7 @@
         <form action="">
         <table cellspacing="10" align="center">
                 <tr>
-                  <td><br>
+                  <td>
                       <b>Basic Details</b>
                       <hr>
                   </td>
@@ -172,36 +153,36 @@
                 <tr>
                 <td> Application ID</td>
                         <td>
-                            <input type="number" id="application_id" name="application_id"> 
+                            <input type="number" id="application_id"> 
                         </td>
                    
                             <td> Student ID </td>
                             <td>
-                                <input type="number" id="student_id" name="student_id"> 
+                                <input type="number" id="STUDENT_ID"> 
                             </td>
                         </tr>
                     <tr>
                                     <td> Aadhar Number </td>
                                     <td>
-                                        <input type="text" id="aadhar_no" name="aadhar_no"> 
+                                        <input type="text" id="aadhar_no"> 
                                     </td>
                               
                                     
                                             <td> Student Name </td>
                                             <td>
-                                                <input type="text" id="student_name" name="student_name"> 
+                                                <input type="text" id="STUDENT_NAME"> 
                                             </td>
                                         </tr>
                                     
                                     <tr>
                                 <td> Father's Name </td>
                                <td>
-                                    <input type="text" id="father_name" name="father_name" >
+                                    <input type="text" id="father_name" >
                                </td>
                             
                                     <td> Mother's Name </td>
                                     <td>
-                                        <input type="text" id="mother_name" name="mother_name"> 
+                                        <input type="text" id="MOTHER_NAME"> 
                                     </td>
                                 </tr>
                             <tr>
@@ -209,32 +190,32 @@
                                     <tr>
                                             <td> Parents Occupation </td>
                                             <td>
-                                                <input type="text" id="parents_occupation" name="parents_occupation"> 
+                                                <input type="text" id="PARENTS_OCCUPATION"> 
                                             </td>
                                            <td> Annual Family Income </td>
                                             <td>
-                                           <input type="number" id="annual_income" name="annual_income"> 
+                                           <input type="number" id="ANNUAL_INCOME"> 
                                            </td>
                                            </tr>
                                             <tr>
                                             <td> Religion </td>
                                             <td>
-                                            <input type="text" id="religion" name="religion"> 
+                                            <input type="text" id="RELIGION"> 
                                             </td>
                                             </tr>
                                            <tr>
-                                             <td><br><br>
+                                             <td>
                                                <b>Academic Details</b><hr>
                                              </td>
                                              </tr>
                                              <tr>
                                             <td> Institute Name </td>
                                            <td>
-                                            <input type="text" id="institute_name" name="institute_name"> 
+                                            <input type="text" id="INSTITUTE_NAME"> 
                                             </td>
                                              <td> Present Course </td>
                                          <td>
-                                            <input type="text" id="present_course" name="present_course"> 
+                                            <input type="text" id="PRESENT_COURSE"> 
                                          </td>
                                          </tr>
                                         <tr>
@@ -242,23 +223,23 @@
                                          <tr><tr>
                                           <td> Present Year </td>
                                          <td>
-                                         <input type="text" id="present_year" name="present_year"> 
+                                         <input type="text" id="PRESENT_YEAR"> 
                                         </td>
                                       
                                           <td> Mode of Study </td>
                                                         <td>
-                                                           <input type="text" id="mode_of_study" name="mode_of_study"> 
+                                                           <input type="text" id="MODE_OF_STUDY"> 
                                                         </td>
                                                         </tr>
                                                         
                                                         <tr>
                                                       <td> Class Start Date </td>
                                                      <td>   
-                                                            <input type="date" id="class_start_date" name="class_start_date"> 
+                                                            <input type="date" id="CLASS_START_DATE"> 
                                                    </td>
                                                          <td> University Name </td>
                                                          <td>   
-                                                         <input type="text" id="university_name" name="university_name"> 
+                                                         <input type="text" id="UNIVERSITY_NAME"> 
                                                          </td>
                                                        </tr>
                                                       <tr>
@@ -268,10 +249,10 @@
                                                         <tr><tr>
                                                          <td> Previous Course </td>
                                                          <td>   
-                                                         <input type="text" id="previous_course" name="previous_year"> 
+                                                         <input type="text" id="PREVIOUS_COURSE"> 
                                                          </td><td> Previous Passing Year </td>
                                                          <td>   
-                                                         <input type="text" id="previous_passing_year" name="previous_passing_year"> 
+                                                         <input type="text" id="PREVIOUS_PASSING_YEAR"> 
                                                          </td>
                                                        </tr>
                                                       <tr> 
@@ -281,44 +262,44 @@
                                                         <tr><tr>
                                                          <td> Previous Class Percent </td>
                                                          <td>   
-                                                         <input type="number" id="previous_class_percent" name="previous_class_percent"> 
+                                                         <input type="number" id="PREVIOUS_CLASS_PERCENT"> 
                                                          </td>
                                                          <td> Seat Number </td>
                                                              <td>   
-                                                             <input type="number" id="seat_number" name="seat_no"> 
+                                                             <input type="number" id="SEAT_NUMBER"> 
                                                              </td>
                                                            </tr>
                                                                  <td> University Board Name </td>
                                                                  <td>   
-                                                                 <input type="text" id="board_no" name="board_no"> 
+                                                                 <input type="text" id="BOARD_NAME"> 
                                                                  </td>
                                                                
                                                                      <td> Passing Year </td>
                                                                      <td>   
-                                                                     <input type="number" id="passing_year" name="passing_year"> 
+                                                                     <input type="number" id="PASSING_YEAR"> 
                                                                     </td>
                                                                      </tr>
                                                                     <tr> 
                                                                    
                                                                    <td> Percentage Obtained </td>
                                                                     <td>   
-                                                                    <input type="number" id="percent_obtained" name="percent_obtained"> 
+                                                                    <input type="number" id="PERCENT_OBTAINED"> 
                                                                    </td>                                                                          
                                                                 
                                                                         
                                                                        <td> Total Academic Fees </td>
                                                                         <td>   
-                                                                        <input type="number" id="total_fees" name="total_fees"> 
+                                                                        <input type="number" id="TOTAL_FEES"> 
                                                                        </td>                                                                          
                                                                     </tr>
                                                                     <tr>
-                                                                      <td><br><br><b>Other Details</b><hr></td>
+                                                                      <td><b>Other Details</b><hr></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td> Martial Status</td>
                                                                          <td>  
                                                                            <ol style="list-style-type:none;">
-                                                                            <li><input type="radio" name="marital_status" value="married" > Married</li><br>
+                                                                            <li><input type="radio" name="marital_status" value="married"> Married</li><br>
                                                                             <li> <input type="radio" name="marital_status" value="not_married"> Single</li><br> 
 
                                                                            </ol> 
@@ -337,41 +318,41 @@
                                                                              <tr>
                                                                                         <td> Address Line 1: </td>
                                                                                            <td>   
-                                                                                          <input type="text" id="address_line1" name="address_line1" size="30"> 
+                                                                                          <input type="text" id="ADDRESS_LINE1" size="30"> 
                                                                                         </td>                                                                          
                                                                                          </tr>
                                                                                  <tr>
                                                                                  <td> Address Line 2: </td>
                                                                                  <td>   
-                                                                                  <input type="text" id="address_line2" name="address_line2" size="30"> 
+                                                                                  <input type="text" id="ADDRESS_LINE2" size="30"> 
                                                                                    </td>                                                                          
                                                                                   </tr>
                                                                                  <tr> 
                                                                                         <tr>
                                                                                                 <td> City </td>
                                                                                                 <td>   
-                                                                                                 <input type="text" id="city" name="city"> 
+                                                                                                 <input type="text" id="CITY"> 
                                                                                                   </td>                                                                          
                                                                                                 
                                                                                      <td> District </td>
                                                                                      <td>   
-                                                                                     <input type="text" id="district" name="district"> 
+                                                                                     <input type="text" id="DISTRICT"> 
                                                                                     </td>                                                                          
                                                                                     </tr>
                                                                                     <tr>
                                                                                             <td> State </td>
                                                                                             <td>   
-                                                                                            <input type="text" id="state" name="state"> 
+                                                                                            <input type="text" id="STATE"> 
                                                                                            </td> 
                                                                                            <td> Pincode </td>
                                                                                                 <td>   
-                                                                                                <input type="number" id="pincode" name="pincode"> 
+                                                                                                <input type="number" id="PINCODE"> 
                                                                                                </td>                                                                          
                                                                                                </tr>
                                                                                                <tr>
                                                                                                     <td> Contact Number </td>
                                                                                                     <td>   
-                                                                                                    <input type="number" id="contact_number" name="contact_number"> 
+                                                                                                    <input type="number" id="CONTACT_NUMBER"> 
                                                                                                    </td>                                                                          
                                                                                                   
                                                                                                         <td> Scholarship Scheme: </td>
@@ -385,10 +366,10 @@
                                                                                                        </td>                                                                          
                                                                                                        </tr>
                                                                                                        <td colspan="2">
-                                                                                                          <input type="Submit" id="submit" value="Submit" name="submit" > 
+                                                                                                          <input type="Submit" id="submit" value="Submit" > 
                                                                                                       </td>
                                                                                                        <td colspan="2"> 
-                                                                                                              <input type="Submit" id="reset"value="Reset" name="reset"> 
+                                                                                                              <input type="Submit" id="reset"value="Reset"> 
                                                                                                           </td>
                                                                                                       </tr>
                                                                                                   

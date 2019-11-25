@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Institute Registiration Form</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+
+  <body>
+    <div id=logo>
+        <img src="govt_logo.jpg" width="100" height="100" align="left">
+       
+      
+        <H1> National Scholarship Portal </H1>
+        <h4>Government of India</h4>
+      </div>
+      
+        <ul>
+          <table cellspacing="10" align="center">
+            <tr>
+              <td> <li ><a class="active" href="HOME.HTML">HOME</a></li></td>
+              <td><li><a href="ABOUT_US.HTML">ABOUT US</a></li></td>
+              <td><li><a href="CONTACT.HTML">CONTACT</a></li></td>
+
+            </tr>
+          </table>
+          </ul>
+    <h1> Institute Registiration Request Form</h1>
+    
+    <table align="center" >
+    <tr><td>
+  <form action="">
+    <table cellspacing="20" align="center" >
+        <tr>
+            <td> Institute State </td>
+            <td>
+                    <select name=slist>
+                            <option value="">------------Select State------------</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Orissa">Orissa</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttaranchal">Uttaranchal</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                            </select>
+            </td>
+            <tr>
+                <td> Institute Name</td>
+                <td><select name=ilist>
+                    <option value="">------------Select Institute------------</option>  
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                  <td> Institute Code </td>
+                  <td>
+                    <input type="text" id="institute_code" name="institute_code"  required> 
+                </td>
+              </tr>
+                
+                <tr>
+                        <td> Institute District </td>
+                        <td>
+                            <input type="text" id="institute_district" name="institute_district" size="25" required> 
+                        </td>
+                    </tr>
+                    <tr>
+                            <td> Institute Pincode </td>
+                            <td>
+                                <input type="number" id="pincode" name="pincode" maxlength="6" size="25" required> 
+                            </td>
+                        </tr>
+                    <tr>
+                            <td> Institute category </td>
+                            <td  >
+                              <ol id="radio" style="list-style-type:none;">
+                                <li><input type="radio" name="institute_category" value="Degree">Degree</li><br>
+                                <li><input type="radio" name="institute_category" value="Diploma">Diploma</li><br>
+                                <li><input type="radio" name="institute_category" value="School">School</li>
+                                </ol> 
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                    <td> University Name </td>
+                                    <td>
+                                        <input type="text" id="university_name" name="university_name" size="25" required> 
+                                    </td>
+                                </tr>
+                            <tr>
+                                    <td> DISE Code </td>
+                                    <td>
+                                        <input type="text" id="dise_code" name="dise_code" size="25" required> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td> Location </td>
+                                        <td>
+                                          <ol style="list-style-type:none;">
+                                               <li><input type="radio" name="Rural" value="Rural"> Rural</li><br>
+                                               <li><input type="radio" name="Urban" value="Urban"> Urban</li><br>
+                                              </ol> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td> Admission Year</td>
+                                            <td>
+                                                <input type="text" id="institute_year" name="institute_year" size="25" required> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td> Password </td>
+                                                <td>
+                                                    <input type="password" id="password" name="password" size="25"required> 
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                                <td> Institute Head Name </td>
+                                                <td>
+                                                    <input type="text" id="institute_head_name" name="institute_head_name" required> 
+                                                </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                    <td> Contact number </td>
+                                                    <td>
+                                                        <input type="text" id="institute_head_name" name="institute_head_name" required> 
+                                                    </td>
+                                                </tr>
+                                                
+                                                        <tr>  <form action="" method="post" enctype="multipart/form-data"></form>
+                                                            <td>
+                                                              
+                                                                  Institute Registiration Certificate </td>
+                                                                  <td>
+                                                                  <input type="file" id="submit"name="fileToUpload" id="fileToUpload">
+                                                                  
+                                                                </td>
+                                                           
+                                                          </form>
+                                                          </tr>
+                                                          <tr>  <form action="" method="post" enctype="multipart/form-data"></form>
+                                                            <td>
+                                                              
+                                                                 University Afiliated Certificate</td>
+                                                                  <td>
+                                                                  <input type="file" id="submit" name="fileToUpload" id="fileToUpload">
+                                                                
+                                                                </td>
+                                                           
+                                                          </form>
+                                                          </tr>
+                                                          <tr>
+                                                                            
+                                                              <td colspan="2">
+                                                                  <input type="Submit" id="submit" value="Submit" name="submit"> 
+                                                              </td>
+                                                               
+                                                              </tr>
+                                                        
+                                                    
+    </table>
+  </form>
+</td></tr>
+</table>
+<br>
+    <footer>
+        Copyright 2019 National Scholarship Portal
+       </footer>
+    
+</body>
+</html>

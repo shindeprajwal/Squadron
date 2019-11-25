@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id=logo>
+    <img src="govt_logo.jpg" width="100" height="100" align="left">
+    
+    
+    <H1> National Scholarship Portal </H1>
+    <h4>Government of India</h4>
+    </div>
+    
+    <ul>
+    <table cellspacing="10" align="center">
+    <tr>
+    <td> <li ><a class="active" href="home">HOME</a></li></td>
+    <td><li><a href="aboutUs">ABOUT US</a></li></td>
+    <td><li><a href="contact">CONTACT</a></li></td>
+    
+    </tr>
+    </table>
+    </ul>
+    <h1>Student Registration Form</h1>
+    
+    <form action="studentRegister.do" method="post">
+    <div>
+    <table cellspacing="10" align="center" >
+    <tr>
+    <td> Aadhar Number: </td>
+    <td>
+    <input type="text" id="aadhar_no" name="aadhar_no" maxlength="12" required onblur="checkAadhar();" onkeypress="return isNumber(event)"><br>
+    <div id="aadhar_message"></div>
+    </td>
+    </tr>
+    <tr>
+    <td> UID: </td>
+    <td>
+    <input type="text" id="u_id" name="u_id" maxlength="12" onblur="checkUid();"  required readonly ><br>
+    <div id="uid_message"></div>
+    </td>
+    </tr>
+    <tr>
+    <td> Name: </td>
+    <td>
+    <input type="text" id="student_name" name="student_name"  required>
+    </td>
+    </tr>
+    <tr>
+    <td> Date of birth: </td>
+    <td>
+    <input type="date" id="date_of_birth" name="date_of_birth" required>
+    </td>
+    </tr>
+    <tr>
+    <td> Gender: </td>
+    <td>
+    <ol style="list-style-type:none;" id="gender" required>
+    <li> <input type="radio" id="gender" name="gender" value="male"> Male</li><br>
+    <li> <input type="radio" id="gender" name="gender" value="female"> Female</li><br>
+    <li><input type="radio" id="gender" name="gender" value="other"> Other</li>
+    </ol>
+    </td>
+    <tr>
+    <td> Mobile Number: </td>
+    <td>
+    <input type="text" id="mobile_no" name="mobile_no" onkeypress="return isNumber(event)" maxlength="10" required>
+    </td>
+    </tr>
+    <tr>
+    <td> Email: </td>
+    <td>
+    <input type="email" id="email" name="email" required>
+    </td>
+    </tr>
+    <tr>
+    <td> State of Domicile: </td>
+    <td>
+    <select name="slist" id="slist" required>
+    <option value="">------------Select State------------</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Lakshadweep">Lakshadweep</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Orissa">Orissa</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttaranchal">Uttaranchal</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="West Bengal">West Bengal</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td> City: </td>
+    <td>
+    <input type="text" id="city" name="city" required>
+    </td>
+    </tr>
+    
+    <tr>
+    <td> Bank Account Number: </td>
+    <td>
+    <input type="number" id="bank_account_no" name="bank_account_no"onkeypress="return isNumber(event)" maxlength="16" required>
+    </td>
+    </tr>
+    <tr>
+    <td> Bank IFSC Code: </td>
+    <td>
+    <input type="text" id="bank_ifsc" name="bank_ifsc" required>
+    </td>
+    </tr>
+    <tr>
+    <td> Bank Account Name: </td>
+    <td>
+    <input type="text" id="bank_account_name" name="bank_account_name" required>
+    </td>
+    </tr>
+    <tr>
+    <td> Password: </td>
+    <td>
+    <input type="password" id="password" name="password" required>
+    </td>
+    </tr>
+    <tr>
+    
+    <td colspan="2">
+    <input type="Submit" id="submit" value="Register" name="submit" required>
+    </td>
+    </tr>
+    </table></div>
+    </form>
+    <br>
+    <footer>
+    Copyright 2019 National Scholarship Portal
+    </footer>
+    </body>
+    <script type="text/javascript">
+    function checkAadhar(){
+        var xhr = new XMLHttpRequest();
+        var aadharnumber=document.getElementById("aadhar_no").value;
+        xhr.open('GET','checkAadhar.do?aadhar_no='+aadharnumber,true);
+        xhr.responseType = 'text';
+        xhr.send();
+        xhr.onload = function(){
+            if(xhr.status==200){
+                var data=xhr.responseText;
+            if(data === "")
+                {
+                myString = "Aadhar Number is valid";
+                document.getElementById("aadhar_message").innerHTML=myString;
+                document.getElementById("u_id").value=aadharnumber;
+                document.getElementById("student_name").disabled=false;
+                document.getElementById("date_of_birth").disabled=false;
+                document.getElementById("gender").disabled=false;
+                document.getElementById("mobile_no").disabled=false;
+                document.getElementById("email").disabled=false;
+                document.getElementById("slist").disabled=false;
+                document.getElementById("city").disabled=false;
+                document.getElementById("bank_account_no").disabled=false;
+                document.getElementById("bank_ifsc").disabled=false;
+                document.getElementById("bank_account_name").disabled=false;
+                document.getElementById("password").disabled=false;
+                document.getElementById("submit").disabled=false;
+                }
+            else{
+                myString="Aadhar Number is not valid";
+                document.getElementById("aadhar_message").innerHTML=myString;
+                document.getElementById("student_name").disabled=true;
+                document.getElementById("date_of_birth").disabled=true;
+                document.getElementById("gender").disabled=true;
+                document.getElementById("mobile_no").disabled=true;
+                document.getElementById("email").disabled=true;
+                document.getElementById("slist").disabled=true;
+                document.getElementById("city").disabled=true;
+                document.getElementById("bank_account_no").disabled=true;
+                document.getElementById("bank_ifsc").disabled=true;
+                document.getElementById("bank_account_name").disabled=true;
+                document.getElementById("password").disabled=true;
+                document.getElementById("submit").disabled=true;
+                }
+            }
+            }
+    }
+    function checkUid(){
+        var xhr = new XMLHttpRequest();
+        var uid=document.getElementById("u_id").value;
+        xhr.open('GET','checkUid.do?u_id='+uid,true);
+        xhr.responseType = 'text';
+        xhr.send();
+        xhr.onload = function(){
+            if(xhr.status==200){
+                var data=xhr.responseText;
+                if(data === "")
+                    {
+                    myString = "Student already registered \nPlease Login!";
+                    document.getElementById("uid_message").innerHTML=myString;
+                    document.getElementById("student_name").disabled=true;
+                    document.getElementById("date_of_birth").disabled=true;
+                    document.getElementById("gender").disabled=true;
+                    document.getElementById("mobile_no").disabled=true;
+                    document.getElementById("email").disabled=true;
+                    document.getElementById("slist").disabled=true;
+                    document.getElementById("city").disabled=true;
+                    document.getElementById("bank_account_no").disabled=true;
+                    document.getElementById("bank_ifsc").disabled=true;
+                    document.getElementById("bank_account_name").disabled=true;
+                    document.getElementById("password").disabled=true;
+                    document.getElementById("submit").disabled=true;
+                    }
+                else{
+                    myString = "Student can register";
+                    document.getElementById("uid_message").innerHTML=myString; 
+                    document.getElementById("student_name").disabled=false;
+                    document.getElementById("date_of_birth").disabled=false;
+                    document.getElementById("gender").disabled=false;
+                    document.getElementById("mobile_no").disabled=false;
+                    document.getElementById("email").disabled=false;
+                    document.getElementById("slist").disabled=false;
+                    document.getElementById("district").disabled=false;
+                    document.getElementById("bank_account_no").disabled=false;
+                    document.getElementById("bank_ifsc").disabled=false;
+                    document.getElementById("bank_account_name").disabled=false;
+                    document.getElementById("password").disabled=false;
+                    document.getElementById("submit").disabled=false;
+                    
+                    }
+                }
+                }
+    }
+
+    function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+       }
+    return true;
+}
+    /* function clear(){
+        document.getElementById("u_id").value("");
+        document.getElementById("uid_message").innerHTML="";
+    } */
+    </script>
+    </html>
